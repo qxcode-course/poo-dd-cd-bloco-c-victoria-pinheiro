@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-28_16-22-57",
+            "content": "@@ -1,447 +0,0 @@\n-class Pessoa:%0A    def __init__(self, nome: str):%0A        self.nome = nome%0A    %0A    def __str__(self) -%3E str:%0A        return self.nome%0A%0Aclass Budega:%0A    def __init__(self, num_caixas: int):%0A        self.caixas: list%5BPessoa %7C None%5D = %5B%5D%0A        for _ in range(num_caixas):%0A            self.caixas.append(None)%0A        self.espera: list%5BPessoa %7C None%5D = %5B%5D%0A    %0A    def __str__(self) -%3E str:%0A        return %0A%0A%0Apessoa = Pessoa(%22Maria%22)%0Aprint(pessoa)%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-28_16-40-41",
+            "content": "@@ -268,75 +268,8 @@\n as):\n-             #la%C3%A7o que vai rodar o tanto de caixas que for inserido\n %0A   \n@@ -353,21 +353,16 @@\n %5B%5D%0A    %0A\n-    %0A\n     def \n@@ -395,264 +395,53 @@\n     \n-caixas = %22,%22.join(%5Bstr(x) for x in self.caixas%5D) #%22fa%C3%A7a uma a%C3%A7%C3%A3o para cada elemento desse vetor%22%0A        espera = %22,%22.join(%5Bstr(x) for x in self.caixas%5D)%0A%0Apessoa = Pessoa(%22Maria%22)%0Aprint(pessoa)%0A%0Abudega = Budega(5)%0Abudega.caixas%5B2%5D = pessoa%0Abudega.espera.append\n+return %0A%0A%0Apessoa = Pessoa(%22Maria%22)%0Aprint(pessoa)%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-28_16-51-10",
+            "content": "@@ -132,486 +132,8 @@\n me%0A%0A\n-    def enter(self, pessoa: Pessoa):  #pessoa indo para a fila%0A        self.espera.append(pessoa)%0A%0A    def call(self, indexx: int):  #chamando a pessoa%0A        if index %3C 0 or index %3E= len(self.caixa):%0A            print(%22indice inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is not None:%0A            print(%22Caixa ocupado%22)%0A            return%0A        self.caixas%5Bindex%5D = self.espera%5B0%5D%0A        del self.espera%5B0%5D         #deletando a pessoa que ja foi chamada%0A%0A%0A\n clas\n@@ -420,16 +420,20 @@\n %5B%5D%0A    %0A\n+    \n %0A    def\n@@ -459,71 +459,8 @@\n tr:%0A\n-        self.caixas = %5BPessoa(%22Maria%22), None, Pessoa(%22Joao%22)%5D%0A%0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-28_17-04-38",
+            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.nome = nome\n    \n    def __str__(self) -> str:\n        return self.nome\n\n    def enter(self, pessoa: Pessoa):  #pessoa indo para a fila\n        self.espera.append(pessoa)\n\n    def call(self, indexx: int):  #chamando a pessoa\n        if index < 0 or index >= len(self.caixa):\n            print(\"indice inexistente\")\n            return\n        if self.caixas[index] is not None:\n            print(\"Caixa ocupado\")\n            return\n        self.caixas[index] = self.espera[0]\n        del self.espera[0]         #deletando a pessoa que ja foi chamada\n\n\nclass Budega:\n    def __init__(self, num_caixas: int):\n        self.caixas: list[Pessoa | None] = []\n        for _ in range(num_caixas):             #la\u00e7o que vai rodar o tanto de caixas que for inserido\n            self.caixas.append(None)\n        self.espera: list[Pessoa | None] = []\n    \n\n    def __str__(self) -> str:\n        self.caixas = [Pessoa(\"Maria\"), None, Pessoa(\"Joao\")]\n\n        caixas = \",\".join([str(x) for x in self.caixas]) #\"fa\u00e7a uma a\u00e7\u00e3o para cada elemento desse vetor\"\n        espera = \",\".join([str(x) for x in self.caixas])\n\npessoa = Pessoa(\"Maria\")\nprint(pessoa)\n\nbudega = Budega(5)\nbudega.caixas[2] = pessoa\nbudega.espera.append",
+            "lines": "41"
+        }
+    ]
+}
