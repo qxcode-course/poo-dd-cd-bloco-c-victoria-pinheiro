@@ -17,8 +17,38 @@
         },
         {
             "label": "2025-10-28_17-04-38",
-            "content": "class Pessoa:\n    def __init__(self, nome: str):\n        self.nome = nome\n    \n    def __str__(self) -> str:\n        return self.nome\n\n    def enter(self, pessoa: Pessoa):  #pessoa indo para a fila\n        self.espera.append(pessoa)\n\n    def call(self, indexx: int):  #chamando a pessoa\n        if index < 0 or index >= len(self.caixa):\n            print(\"indice inexistente\")\n            return\n        if self.caixas[index] is not None:\n            print(\"Caixa ocupado\")\n            return\n        self.caixas[index] = self.espera[0]\n        del self.espera[0]         #deletando a pessoa que ja foi chamada\n\n\nclass Budega:\n    def __init__(self, num_caixas: int):\n        self.caixas: list[Pessoa | None] = []\n        for _ in range(num_caixas):             #la\u00e7o que vai rodar o tanto de caixas que for inserido\n            self.caixas.append(None)\n        self.espera: list[Pessoa | None] = []\n    \n\n    def __str__(self) -> str:\n        self.caixas = [Pessoa(\"Maria\"), None, Pessoa(\"Joao\")]\n\n        caixas = \",\".join([str(x) for x in self.caixas]) #\"fa\u00e7a uma a\u00e7\u00e3o para cada elemento desse vetor\"\n        espera = \",\".join([str(x) for x in self.caixas])\n\npessoa = Pessoa(\"Maria\")\nprint(pessoa)\n\nbudega = Budega(5)\nbudega.caixas[2] = pessoa\nbudega.espera.append",
+            "content": "@@ -251,16 +251,17 @@\n f, index\n+x\n : int): \n",
             "lines": "41"
+        },
+        {
+            "label": "2025-11-10_22-59-48",
+            "content": "@@ -1,37 +1,1266 @@\n-espera: list%5Bstr%5D = %5B%5D%0A%0Aprint(espera)\n+class Pessoa:%0A    def __init__(self, nome: str):%0A        self.nome = nome%0A    %0A    def __str__(self) -%3E str:%0A        return self.nome%0A%0A    def enter(self, pessoa: Pessoa):  #pessoa indo para a fila%0A        self.espera.append(pessoa)%0A%0A    def call(self, index: int):  #chamando a pessoa%0A        if index %3C 0 or index %3E= len(self.caixa):%0A            print(%22indice inexistente%22)%0A            return%0A        if self.caixas%5Bindex%5D is not None:%0A            print(%22Caixa ocupado%22)%0A            return%0A        self.caixas%5Bindex%5D = self.espera%5B0%5D%0A        del self.espera%5B0%5D         #deletando a pessoa que ja foi chamada%0A%0A%0Aclass Budega:%0A    def __init__(self, num_caixas: int):%0A        self.caixas: list%5BPessoa %7C None%5D = %5B%5D%0A        for _ in range(num_caixas):             #la%C3%A7o que vai rodar o tanto de caixas que for inserido%0A            self.caixas.append(None)%0A        self.espera: list%5BPessoa %7C None%5D = %5B%5D%0A    %0A%0A    def __str__(self) -%3E str:%0A        self.caixas = %5BPessoa(%22Maria%22), None, Pessoa(%22Joao%22)%5D%0A%0A        caixas = %22,%22.join(%5Bstr(x) for x in self.caixas%5D) #%22fa%C3%A7a uma a%C3%A7%C3%A3o para cada elemento desse vetor%22%0A        espera = %22,%22.join(%5Bstr(x) for x in self.caixas%5D)%0A%0Apessoa = Pessoa(%22Maria%22)%0Aprint(pessoa)%0A%0Abudega = Budega(5)%0Abudega.caixas%5B2%5D = pessoa%0Abudega.espera.append\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-11-10_23-18-05",
+            "content": "@@ -17,8 +17,21 @@\n %5D = %5B%5D%0A%0A\n+print(espera)\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-10_23-18-55",
+            "content": "@@ -21,25 +21,4 @@\n %5B%5D%0A%0A\n-espera.append(%22joao%22)\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-11-10_23-23-07",
+            "content": "@@ -42,380 +42,4 @@\n ao%22)\n-%0Aespera.append(%22maria%22)%0Aespera.append(%22bruxa%22)%0A%0Adel espera%5B1%5D%0A%0Aespera = %5B'maria'%5D + espera%0A%0Adel espera%5B0%5D%0A%0Aespera.append(%22lobo%22)%0Aespera.append(%22ca%C3%A7ador%22)%0A%0Adel espera%5B2%5D%0A%0Aespera.insert(2, %22lobo%22) #insert %C3%A9 para colocar no mesmo lugar de antes (primeiro digita o %C3%ADndice que quer que ele fique e depois o que quer colocar la)%0A%0Aespera_texto = %22-%22.join(espera)%0A%0Aprint(espera_texto)\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-11_17-03-29",
+            "content": "@@ -362,16 +362,23 @@\n ar la)%0A%0A\n+espera_\n texto = \n@@ -378,18 +378,17 @@\n exto = %22\n-, \n+-\n %22.join(e\n@@ -405,86 +405,17 @@\n int(\n-texto)%0A%0Atexto.split(%22-%22)%0A%0A#list comprehension (gera uma lista a partir da outra)%0A%0A\n+espera_texto)\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-11-15_14-46-16",
+            "content": "espera: list[str] = []\n\nespera.append(\"joao\")\nespera.append(\"maria\")\nespera.append(\"bruxa\")\n\ndel espera[1]\n\nespera = ['maria'] + espera\n\ndel espera[0]\n\nespera.append(\"lobo\")\nespera.append(\"ca\u00e7ador\")\n\ndel espera[2]\n\nespera.insert(2, \"lobo\") #insert \u00e9 para colocar no mesmo lugar de antes (primeiro digita o \u00edndice que quer que ele fique e depois o que quer colocar la)\n\ntexto = \", \".join(espera)\n\nprint(texto)\n\ntexto.split(\"-\")\n\n#list comprehension (gera uma lista a partir da outra)\n\n",
+            "lines": "27"
         }
     ]
 }

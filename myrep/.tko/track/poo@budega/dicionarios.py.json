@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-10_22-59-48",
+            "content": "#compras: list[str] = [\"batata\", \"fandangos\", \"uva\", \"picles\", \"uva\"] #lista so tem um argumento\n\n\nnomes: dict[int, str] = {} # dicion\u00e1rio tem que er dois argumentos \n# chave = valor\nnomes[1] = \"one\"\nnomes[2] = \"two\"\nnomes[3] = \"three\"\nnomes[4] = \"four\"\nnomes[5] = \"six\"\n\ndef pegar_valores\nvalores: dict[str, int] = {}\nvalores[\"one\"] = 1\nvalores[\"two\"] = 2\nvalores[\"three\"] = 3\nvalores[\"four\"] = 4\nvalores[\"six\"] = 6\n\nnomes: dict[int, str] = {     #outra forma de escrever o dicion\u00e1rio\n    1: \"one\",\n    2: \"two\",\n    3: \"three\",\n    4: \"four\",\n    5: \"five\"\n}\nif valor in nomes:\n    return nomes[valor]\nraise Exception(f\"Nao existe {valor} na lista de valores\")\n\ndef somar(a: str, b: str) -> str:\n    return nomes pegar_valor(a) + pegar_valor(b)\n\nprint(somar(\"five\", \"seven\"))\nprint(somar(\"three\", \"two\"))\n\n\n",
+            "lines": "37"
+        }
+    ]
+}

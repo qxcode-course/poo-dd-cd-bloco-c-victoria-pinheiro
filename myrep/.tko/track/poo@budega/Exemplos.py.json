@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-10_22-59-48",
+            "content": "def dividir(num: int, den: int) -> float | str:\n    if den == 0:\n        raise Exception(\"Nao consigo dividir por zero\") #continua sem quebrar o c\u00f3digo\n    return num / den\n\ndef processa(a: int, b: int, c: int, d: int) -> float:\n    a = dividir(a, b)\n    b = dividir(c, d)\n\ndef main():\n    print(processa(4, 2, 3, 0))\n\n\n\n",
+            "lines": "14"
+        }
+    ]
+}
