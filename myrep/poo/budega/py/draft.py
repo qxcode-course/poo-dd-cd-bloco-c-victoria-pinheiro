@@ -51,4 +51,25 @@ class Budega:
         espera= ', '.join([str(x) for x in self.espera])
         return f"Caixas: [{caixas}]\nEspera: [{espera}]"
     
+def main():
+    budega: Budega | None = None
+
+    while True:
+        line: str = input()
+        print("$" + line)
+        args: list[str] = line.split()
+
+        if args[0] == "end":
+            break
+        if args[0] == "show":
+            if budega is None:
+                print("fail: mercado nao iniciado")
+            else: 
+                print(budega)
+        elif args[0] == "init":
+            caixas = int(args[1])
+            budega = Budega(caixas)
+            
+
+main()
 
