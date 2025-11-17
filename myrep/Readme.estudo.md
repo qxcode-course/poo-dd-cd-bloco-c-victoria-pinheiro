@@ -47,4 +47,3 @@ texto.split("-")
                      #len (x) ("vou gerar tamanho de elemento")
 
 [elem(0) for elem in espera] #vai pegar a primeira letra de cada objeto na lista
-

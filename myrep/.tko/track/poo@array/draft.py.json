@@ -1,0 +1,549 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-16_19-45-30",
+            "content": "@@ -1,61 +0,0 @@\n-class Foo:%0A    def __init__(self, x: int):%0A        self.x = x\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-16_19-48-51",
+            "content": "@@ -58,51 +58,4 @@\n  = x\n-%0A    %0A    def __str__(self):%0A        return f%22%22\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-16_19-57-37",
+            "content": "@@ -104,136 +104,5 @@\n n f%22\n-Foo(%7Bself.x%7D)%22%0A    %0Alista_vazia: list%5Bint%5D = %5B%5D%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Alista_preenchida_objetos: list%5BFoo%5D = \n+%22\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-16_20-10-30",
+            "content": "@@ -236,99 +236,4 @@\n %5D = \n-%5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0A%0Alista_vazia.append(1)%0Alista_preenchida.append(Foo(6))\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-11-16_20-18-44",
+            "content": "@@ -152,29 +152,8 @@\n  %5B%5D%0A\n-print f(lista_vazia)%0A\n list\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-11-16_20-36-33",
+            "content": "@@ -153,16 +153,18 @@\n %5B%5D%0Aprint\n+ f\n (lista_v\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-11-16_20-36-42",
+            "content": "@@ -167,17 +167,16 @@\n _vazia)%0A\n-%0A\n lista_pr\n@@ -217,33 +217,8 @@\n  5%5D%0A\n-print(lista_preenchida)%0A%0A\n list\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-11-16_20-37-42",
+            "content": "@@ -321,40 +321,8 @@\n (5)%5D\n-%0Aprint(lista_preenchida_objetos)\n %0A%0Ali\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-11-16_20-38-13",
+            "content": "@@ -322,51 +322,8 @@\n 5)%5D%0A\n-%5Bstr(x) foe x in lista_preenchida_objetos%5D%0A\n prin\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-11-16_20-40-38",
+            "content": "@@ -328,17 +328,17 @@\n tr(x) fo\n-r\n+e\n  x in li\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-11-16_20-41-13",
+            "content": "@@ -318,22 +318,16 @@\n Foo(5)%5D%0A\n-print(\n %5Bstr(x) \n@@ -360,17 +360,16 @@\n objetos%5D\n-)\n %0Aprint(l\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-11-16_20-41-42",
+            "content": "@@ -367,16 +367,48 @@\n bjetos%5D)\n+%0Aprint(lista_preenchida_objetos)\n %0A%0Alista_\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-11-16_20-41-52",
+            "content": "@@ -371,57 +371,8 @@\n os%5D)\n- #transformando cada elemento do vetor em uma str\n %0A%0Ali\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-11-16_20-43-12",
+            "content": "@@ -422,37 +422,8 @@\n tr%0A%0A\n-print(len(lista_preenchida))%0A\n list\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-11-16_20-43-49",
+            "content": "@@ -447,17 +447,16 @@\n chida))%0A\n-%0A\n lista_va\n@@ -470,28 +470,9 @@\n end(\n-6)%0Aprint(lista_vazia\n+1\n )%0Ali\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-11-16_20-44-53",
+            "content": "@@ -450,33 +450,28 @@\n da))%0A%0Alista_\n-preenchid\n+vazi\n a.append(6)%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-11-16_20-45-11",
+            "content": "@@ -487,25 +487,20 @@\n t(lista_\n-preenchid\n+vazi\n a)%0Alista\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-11-16_20-46-08",
+            "content": "@@ -502,54 +502,8 @@\n ida)\n-%0A%0Alista_preenchida.pop%0Aprint(lista_preenchida)\n %0Alis\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-11-16_20-46-57",
+            "content": "@@ -524,10 +524,8 @@\n .pop\n-()\n %0Apri\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-16_20-47-14",
+            "content": "@@ -550,40 +550,8 @@\n ida)\n-%0A%0Alista_preenchida.insert(0, 99)\n %0Alis\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-11-16_20-49-10",
+            "content": "@@ -583,37 +583,8 @@\n 99)%0A\n-print(lista_preenchida)%0A%0A%0A%0A%0A%0A\n list\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-11-16_20-49-35",
+            "content": "@@ -608,33 +608,8 @@\n a)%0A%0A\n-lista_preenchida.pop(0)%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-11-16_20-50-43",
+            "content": "@@ -579,10 +579,10 @@\n (0, \n-10\n+99\n )%0Apr\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-11-16_21-01-54",
+            "content": "@@ -632,32 +632,8 @@\n (0)%0A\n-print(lista_preenchida)%0A\n %0A%0A%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-11-16_21-02-55",
+            "content": "@@ -657,64 +657,8 @@\n a)%0A%0A\n-lista_preenchida.insert(0, 99)%0Aprint(lista_preenchida)%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-16_21-03-59",
+            "content": "@@ -677,17 +677,17 @@\n .insert(\n-2\n+0\n , 99)%0Apr\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-11-16_21-04-10",
+            "content": "@@ -713,58 +713,8 @@\n a)%0A%0A\n-lista_preenchida.pop(2)%0Aprint(lista_preenchida)%0A%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-11-16_21-04-39",
+            "content": "@@ -762,62 +762,8 @@\n a)%0A%0A\n-print(%22, %22.join(%5Bstr(x) for x in lista_preenchida%5D))%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-16_21-05-41",
+            "content": "@@ -1,831 +1,46 @@\n-class Foo:%0A    def __init__(self, x: int):%0A        self.x = x%0A    %0A    def __str__(self):%0A        return f%22Foo(%7Bself.x%7D)%22%0A    %0Alista_vazia: list%5Bint%5D = %5B%5D%0Aprint(lista_vazia)%0A%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Aprint(lista_preenchida)%0A%0Alista_preenchida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0Aprint(%5Bstr(x) for x in lista_preenchida_objetos%5D) #transformando cada elemento do vetor em uma str%0A%0Aprint(len(lista_preenchida))%0A%0Alista_preenchida.append(6)%0Aprint(lista_preenchida)%0A%0Alista_preenchida.pop()%0Aprint(lista_preenchida)%0A%0Alista_preenchida.insert(0, 10)%0Aprint(lista_preenchida)%0A%0Alista_preenchida.pop(0)%0Aprint(lista_preenchida)%0A%0Alista_preenchida.insert(2, 99)%0Aprint(lista_preenchida)%0A%0Alista_preenchida.pop(2)%0Aprint(lista_preenchida)%0A%0Aprint(%22, %22.join(%5Bstr(x) for x in lista_preenchida%5D))%0A%0A\n+@@ -816,48 +816,8 @@%0A ))%250A%250A%0A-\n n = 10 \n-%0A\n+%250A\n sequ\n@@ -69,59 +69,25 @@\n  1))\n-%0Aprint(sequencia)%0A%0A%0A%0A%0A%0A%0Alista_preenchida.append(Foo(6))\n+%250A%250A%0A %250A%250A%250A%250A%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-16_21-10-04",
+            "content": "@@ -812,16 +812,23 @@\n ida%5D))%0A%0A\n+n = 10 \n %0Asequenc\n@@ -843,18 +843,21 @@\n t(range(\n+n + \n 1\n-0\n ))%0Aprint\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-11-16_21-11-05",
+            "content": "@@ -837,17 +837,17 @@\n (range(1\n-1\n+0\n ))%0Aprint\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-11-16_21-11-17",
+            "content": "@@ -816,14 +816,8 @@\n ))%0A%0A\n-n = 10\n %0Aseq\n@@ -840,12 +840,9 @@\n nge(\n-n + \n+1\n 1))%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-11-16_21-11-59",
+            "content": "@@ -872,78 +872,8 @@\n a)%0A%0A\n-import random%0Aaleatorio = %5Brandom.randint(0, 10) for _ in range(10)%5D%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-11-16_21-13-44",
+            "content": "@@ -941,25 +941,8 @@\n 0)%5D%0A\n-print(aleatorio)%0A\n %0A%0A%0A%0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-11-16_21-13-58",
+            "content": "@@ -959,29 +959,8 @@\n o)%0A%0A\n-print(sequencia%5B3%5D)%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-11-16_21-14-42",
+            "content": "@@ -123,32 +123,8 @@\n     \n-%0A%0Aprint(%22Lista Vazia%22)%5Cn\n %0Alis\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-16_21-15-36",
+            "content": "@@ -126,17 +126,16 @@\n  %0A%0Aprint\n- \n (%22Lista \n@@ -141,16 +141,18 @@\n  Vazia%22)\n+%5Cn\n %0Alista_v\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-16_21-16-51",
+            "content": "@@ -129,21 +129,16 @@\n print (%22\n------\n Lista Va\n@@ -144,13 +144,8 @@\n azia\n------\n %22)%0Al\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-16_21-17-11",
+            "content": "@@ -122,24 +122,25 @@\n %0A    %0A%0Aprint\n+ \n (%22-----Lista\n@@ -205,44 +205,8 @@\n a)%0A%0A\n-print(%22-----Lista Preenchida-----%22)%0A\n list\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-16_21-17-50",
+            "content": "@@ -311,44 +311,8 @@\n a)%0A%0A\n-print(%22-----Lista de Objetos-----%22)%0A\n list\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-11-16_21-18-19",
+            "content": "@@ -526,54 +526,8 @@\n tr%0A%0A\n-print(%22-----N%C3%BAmero de objetos na lista-----%22)%0A\n prin\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-16_21-19-06",
+            "content": "@@ -602,49 +602,8 @@\n ))%0A%0A\n-print(%22-----Inserindo %C3%A0 sequ%C3%AAncia-----%22)%0A\n list\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-16_21-20-00",
+            "content": "@@ -695,55 +695,8 @@\n a)%0A%0A\n-print(%22-----Retirando o numero inserido-----%22)%0A\n list\n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-16_21-20-39",
+            "content": "@@ -616,11 +616,11 @@\n --In\n-clu\n+ser\n indo\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-16_21-20-53",
+            "content": "@@ -790,52 +790,8 @@\n a)%0A%0A\n-print(%22-----Inserindo N%C3%BAmero %C3%A0 lista-----%22)%0A\n list\n@@ -846,52 +846,8 @@\n a)%0A%0A\n-print(%22-----Inserindo N%C3%BAmero %C3%A0 lista-----%22)%0A\n list\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-16_21-22-01",
+            "content": "@@ -894,30 +894,30 @@\n print(%22-----\n-Retira\n+Inseri\n ndo N%C3%BAmero d\n@@ -915,18 +915,17 @@\n  N%C3%BAmero \n-da\n+%C3%A0\n  lista--\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-16_21-22-24",
+            "content": "@@ -984,52 +984,8 @@\n a)%0A%0A\n-print(%22-----Inserindo N%C3%BAmero %C3%A0 lista-----%22)%0A\n list\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-11-16_21-25-59",
+            "content": "@@ -1084,52 +1084,8 @@\n a)%0A%0A\n-print(%22-----Inserindo N%C3%BAmero %C3%A0 lista-----%22)%0A\n list\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-16_21-37-26",
+            "content": "@@ -1084,38 +1084,38 @@\n a)%0A%0Aprint(%22-----\n-Retira\n+Inseri\n ndo N%C3%BAmero inser\n@@ -1105,32 +1105,31 @@\n indo N%C3%BAmero \n-inserido\n+%C3%A0 lista\n -----%22)%0Alist\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-11-16_22-03-58",
+            "content": "@@ -1178,32 +1178,8 @@\n a)%0A%0A\n-print(%22-----Join-----%22)%0A\n prin\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-11-16_22-04-14",
+            "content": "@@ -1256,33 +1256,8 @@\n ))%0A%0A\n-print(%22-----Range-----%22)%0A\n n = \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-16_22-05-17",
+            "content": "@@ -1337,46 +1337,8 @@\n a)%0A%0A\n-print(%22-----N%C3%BAmeros Aleat%C3%B3rios-----%22)%0A\n impo\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-16_22-05-40",
+            "content": "@@ -1458,17 +1458,16 @@\n torio)%0A%0A\n-%0A\n print(se\n@@ -1473,19 +1473,19 @@\n equencia\n-(3)\n+%5B3%5D\n )%0A%0A%0A%0A%0A%0A%0A\n",
+            "lines": "68"
+        },
+        {
+            "label": "2025-11-16_22-06-34",
+            "content": "@@ -1478,11 +1478,11 @@\n ncia\n-%5B3%5D\n+(3)\n )%0A%0A%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-11-16_22-06-54",
+            "content": "@@ -1462,99 +1462,27 @@\n o)%0A%0A\n-print(%22-----%C3%8Dndice da sequencia-----%22)%0Aprint(sequencia%5B3%5D)%0A%0Afor x in sequencia:%0A    print(x\n+%0Aprint(sequencia%5B3%5D\n )%0A%0A%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-11-16_22-08-09",
+            "content": "@@ -1522,37 +1522,8 @@\n %5D)%0A%0A\n-print(%22-----For range-----%22)%0A\n for \n@@ -1552,22 +1552,16 @@\n int(x)%0A%0A\n-    %0A%0A\n %0A%0A%0A%0A%0Alis\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-11-16_22-08-55",
+            "content": "@@ -1585,100 +1585,12 @@\n x)%0A%0A\n-print(%22-----For indexado-----%22)%0Afor i in range(len(sequencia)):%0A    print(i, sequencia%5Bi%5D)%0A%0A\n+    \n %0A%0A%0A%0A\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-16_22-10-44",
+            "content": "@@ -1677,104 +1677,8 @@\n %5D)%0A%0A\n-x = 5 %0Apos = -1%0Afor i, v in enumerate(sequencia):%0A    if v == x:%0A        pos = i%0A        break%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-11-16_22-12-15",
+            "content": "@@ -1677,28 +1677,8 @@\n %5D)%0A%0A\n-#buscar manualmente%0A\n x = \n@@ -1773,35 +1773,8 @@\n ak%0A%0A\n-print(sequencia.index(5))%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-11-16_22-15-57",
+            "content": "@@ -1820,54 +1820,8 @@\n ))%0A%0A\n-pares = %5Bv for v in sequencia if v %25 2 == 0%5D%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "89"
+        },
+        {
+            "label": "2025-11-16_22-26-15",
+            "content": "@@ -1793,33 +1793,8 @@\n ak%0A%0A\n-print(%22-----Busca-----%22)%0A\n prin\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-11-16_22-26-53",
+            "content": "@@ -1810,21 +1810,8 @@\n usca\n-ndo com index\n ----\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-16_22-27-01",
+            "content": "@@ -1858,40 +1858,8 @@\n ))%0A%0A\n-print(%22-----For indexado-----%22)%0A\n pare\n@@ -1903,21 +1903,8 @@\n  0%5D%0A\n-print(pares)%0A\n %0A%0A%0A%0A\n",
+            "lines": "92"
+        },
+        {
+            "label": "2025-11-16_22-27-24",
+            "content": "@@ -1,2120 +1,144 @@\n-class Foo:%0A    def __init__(self, x: int):%0A        self.x = x%0A    %0A    def __str__(self):%0A        return f%22Foo(%7Bself.x%7D)%22%0A    %0A%0Aprint(%22-----Lista Vazia-----%22)%0Alista_vazia: list%5Bint%5D = %5B%5D%0Aprint(lista_vazia)%0A%0Aprint(%22-----Lista Preenchida-----%22)%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Lista de Objetos-----%22)%0Alista_preenchida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0Aprint(%5Bstr(x) for x in lista_preenchida_objetos%5D) #transformando cada elemento do vetor em uma str%0A%0Aprint(%22\n+@@ -1870,34 +1870,20 @@%0A \n ----\n+%0A\n -N\n-%C3%BA\n+u\n mero\n- de objetos na lista-----%22)%0Aprint(len(lista_preenchida))%0A%0Aprint(%22-----Incluindo %C3%A0 sequ%C3%AAncia-----%22)%0Alista_preenchida.append(6)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Retirando o numero inserido-----%22)%0Alista_preenchida.pop()%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Inserindo N%C3%BAmero %C3%A0 lista-----%22)%0Alista_preenchida.insert(0, 10)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Retirando N%C3%BAmero da lista-----%22)%0Alista_preenchida.pop(0)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Inserindo N%C3%BAmero %C3%A0 lista-----%22)%0Alista_preenchida.insert(2, 99)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Retirando N%C3%BAmero inserido-----%22)%0Alista_preenchida.pop(2)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Join-----%22)%0Aprint(%22, %22.join(%5Bstr(x) for x in lista_preenchida%5D))%0A%0Aprint(%22-----Range-----%22)%0An = 10%0Asequencia = list(range(n + 1))%0Aprint(sequencia)%0A%0Aprint(%22-----N%C3%BAmeros Aleat%C3%B3rios-----%22)%0Aimport random%0Aaleatorio = %5Brandom.randint(0, 10) for _ in range(10)%5D%0Aprint(aleatorio)%0A%0Aprint(%22-----%C3%8Dndice da sequencia-----%22)%0Aprint(sequencia%5B3%5D)%0A%0Aprint(%22-----For range-----%22)%0Afor x in sequencia:%0A    print(x)%0A%0Aprint(%22-----For indexado-----%22)%0Afor i in range(len(sequencia)):%0A    print(i, sequencia%5Bi%5D)%0A%0A#buscar manualmente%0Ax = 5 %0Apos = -1%0Afor i, v in enumerate(sequencia):%0A    if v == x:%0A        pos = i%0A        break%0A%0Aprint(%22-----Buscando com index-----%22)%0Aprint(sequencia.index(5))%0A%0Aprint(%22-----Numeros pares da sequencia-----%22)%0Apares = %5Bv for v in sequencia if v %25 2 == 0%5D%0Aprint(pares) %0A%0Aprint(%22-----Buscando e retirando-----%22)%0Ax = 5%0Aif x in sequencia:%0A    sequencia.remove(x)%0Aprint(sequencia.remove)%0A%0A%0A%0A%0A%0A%0A%0A%0A%0Alista_preenchida.append(Foo(6))\n+s pares da sequencia%0A+For indexado%0A ----%0A@@ -1943,18 +1943,16 @@%0A t(pares)%0A- %250A%0A %250A%250A%250A%250A%250A%250A%250A%250A%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-16_22-30-36",
+            "content": "@@ -2064,16 +2064,23 @@\n equencia\n+.remove\n )%0A%0A%0A%0A%0A%0A%0A\n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-11-16_22-30-53",
+            "content": "@@ -2071,122 +2071,8 @@\n a)%0A%0A\n-print(%22-----Retirando todos os valores-----%22)%0Ax = 2%0Asequencia = %5Bv for v in sequencia if v != x%5D%0Aprint(sequencia)%0A\n %0A%0A%0A%0A\n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-11-16_22-32-28",
+            "content": "@@ -2109,10 +2109,8 @@\n ores\n- X\n ----\n@@ -2186,48 +2186,8 @@\n a)%0A%0A\n-dir_lista = dir(list)%0Aprint(dir_lista)%0A%0A\n %0A%0A%0A%0A\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-16_22-34-15",
+            "content": "@@ -2184,16 +2184,55 @@\n encia)%0A%0A\n+dir_lista = dir(list)%0Aprint(dir_lista)%0A\n %0A%0A%0A%0A%0A%0A%0A%0A\n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-11-16_22-34-38",
+            "content": "@@ -1 +1,2230 @@\n-%0A\n+class Foo:%0A    def __init__(self, x: int):%0A        self.x = x%0A    %0A    def __str__(self):%0A        return f%22Foo(%7Bself.x%7D)%22%0A    %0A%0Aprint(%22-----Lista Vazia-----%22)%0Alista_vazia: list%5Bint%5D = %5B%5D%0Aprint(lista_vazia)%0A%0Aprint(%22-----Lista Preenchida-----%22)%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Lista de Objetos-----%22)%0Alista_preenchida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0Aprint(%5Bstr(x) for x in lista_preenchida_objetos%5D) #transformando cada elemento do vetor em uma str%0A%0Aprint(%22-----N%C3%BAmero de objetos na lista-----%22)%0Aprint(len(lista_preenchida))%0A%0Aprint(%22-----Incluindo %C3%A0 sequ%C3%AAncia-----%22)%0Alista_preenchida.append(6)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Retirando o numero inserido-----%22)%0Alista_preenchida.pop()%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Inserindo N%C3%BAmero %C3%A0 lista-----%22)%0Alista_preenchida.insert(0, 10)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Retirando N%C3%BAmero da lista-----%22)%0Alista_preenchida.pop(0)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Inserindo N%C3%BAmero %C3%A0 lista-----%22)%0Alista_preenchida.insert(2, 99)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Retirando N%C3%BAmero inserido-----%22)%0Alista_preenchida.pop(2)%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Join-----%22)%0Aprint(%22, %22.join(%5Bstr(x) for x in lista_preenchida%5D))%0A%0Aprint(%22-----Range-----%22)%0An = 10%0Asequencia = list(range(n + 1))%0Aprint(sequencia)%0A%0Aprint(%22-----N%C3%BAmeros Aleat%C3%B3rios-----%22)%0Aimport random%0Aaleatorio = %5Brandom.randint(0, 10) for _ in range(10)%5D%0Aprint(aleatorio)%0A%0Aprint(%22-----%C3%8Dndice da sequencia-----%22)%0Aprint(sequencia%5B3%5D)%0A%0Aprint(%22-----For range-----%22)%0Afor x in sequencia:%0A    print(x)%0A%0Aprint(%22-----For indexado-----%22)%0Afor i in range(len(sequencia)):%0A    print(i, sequencia%5Bi%5D)%0A%0A#buscar manualmente%0Ax = 5 %0Apos = -1%0Afor i, v in enumerate(sequencia):%0A    if v == x:%0A        pos = i%0A        break%0A%0Aprint(%22-----Buscando com index-----%22)%0Aprint(sequencia.index(5))%0A%0Aprint(%22-----Numeros pares da sequencia-----%22)%0Apares = %5Bv for v in sequencia if v %25 2 == 0%5D%0Aprint(pares) %0A%0Aprint(%22-----Buscando e retirando-----%22)%0Ax = 5%0Aif x in sequencia:%0A    sequencia.remove(x)%0Aprint(sequencia)%0A%0Aprint(%22-----Retirando todos os valores X-----%22)%0Ax = 2%0Asequencia = %5Bv for v in sequencia if v != x%5D%0Aprint(sequencia)%0A%0A%0A%0A%0A%0A%0A%0A%0A%0Alista_preenchida.append(Foo(6))\n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-11-16_22-39-34",
+            "content": "@@ -1,122 +1 @@\n-class Foo:%0A    def __init__(self, x: int):%0A        self.x = x%0A    %0A    def __str__(self):%0A        return f%22Foo(%7Bself.x%7D)%22\n %0A\n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-11-16_22-40-47",
+            "content": "@@ -119,87 +119,4 @@\n %7D)%22%0A\n-    %0Aprint(%22-----Lista Vazia-----%22)%0Alista_vazia: list%5Bint%5D = %5B%5D%0Aprint(lista_vazia)%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-11-16_22-41-59",
+            "content": "@@ -202,111 +202,4 @@\n ia)%0A\n-%0Aprint(%22-----Lista Preenchida-----%22)%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Aprint(lista_preenchida)%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-11-16_22-43-12",
+            "content": "@@ -305,10 +305,8 @@\n nchida)%0A\n-%0A%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-11-16_22-43-59",
+            "content": "@@ -310,40 +310,5 @@\n a)%0A%0A\n-print(%22-----Lista de Objetos-----%22)\n %0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2025-11-16_22-50-47",
+            "content": "@@ -346,182 +346,4 @@\n -%22)%0A\n-lista_preenchida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0Aprint(%5Bstr(x) for x in lista_preenchida_objetos%5D) #transformando cada elemento do vetor em uma str%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2025-11-16_22-52-47",
+            "content": "@@ -524,82 +524,4 @@\n str%0A\n-%0Aprint(%22-----N%C3%BAmero de objetos na lista-----%22)%0Aprint(len(lista_preenchida))%0A%0A%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-11-16_22-53-34",
+            "content": "@@ -601,45 +601,5 @@\n ))%0A%0A\n-print(%22-----Incluindo %C3%A0 sequ%C3%AAncia-----%22)\n %0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-11-16_22-54-08",
+            "content": "@@ -642,55 +642,4 @@\n -%22)%0A\n-lista_preenchida.append(6)%0Aprint(lista_preenchida)%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-11-16_22-55-12",
+            "content": "@@ -693,99 +693,4 @@\n da)%0A\n-%0Aprint(%22-----Retirando o numero inserido-----%22)%0Alista_preenchida.pop()%0Aprint(lista_preenchida)%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-11-16_22-56-03",
+            "content": "@@ -131,13 +131,13 @@\n nt(%22\n-%3E%3E%3E%3E%3E\n+-----\n List\n@@ -143,16 +143,21 @@\n ta Vazia\n+-----\n %22)%0Alista\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-16_22-56-53",
+            "content": "@@ -197,29 +197,29 @@\n ia)%0A%0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n Lista Preenc\n@@ -222,16 +222,21 @@\n eenchida\n+-----\n %22)%0Alista\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-16_22-57-09",
+            "content": "@@ -303,16 +303,21 @@\n %0Aprint(%22\n+-----\n Lista de\n@@ -324,16 +324,21 @@\n  Objetos\n+-----\n %22)%0Alista\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-16_22-57-21",
+            "content": "@@ -299,29 +299,24 @@\n da)%0A%0Aprint(%22\n-%3E%3E%3E%3E%3E\n Lista de Obj\n@@ -508,21 +508,21 @@\n %0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n N%C3%BAmero d\n@@ -539,16 +539,21 @@\n na lista\n+-----\n %22)%0Aprint\n@@ -584,21 +584,21 @@\n %0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n Incluind\n@@ -610,16 +610,21 @@\n equ%C3%AAncia\n+-----\n %22)%0Alista\n@@ -677,21 +677,21 @@\n %0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n Retirand\n@@ -709,16 +709,21 @@\n inserido\n+-----\n %22)%0Alista\n@@ -764,10 +764,8 @@\n nchida)%0A\n-%0A%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-16_22-58-27",
+            "content": "@@ -759,103 +759,5 @@\n a)%0A%0A\n-print(%22-----Inserindo N%C3%BAmero %C3%A0 lista-----%22)%0Alista_preenchida.insert(0, 10)%0Aprint(lista_preenchida)\n %0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-11-16_22-59-35",
+            "content": "@@ -1,873 +1,189 @@\n-class Foo:%0A    def __init__(self, x: int):%0A        self.x = x%0A    %0A    def __str__(self):%0A        return f%22Foo(%7Bself.x%7D)%22%0A    %0Aprint(%22%3E%3E%3E%3E%3ELista Vazia%22)%0Alista_vazia: list%5Bint%5D = %5B%5D%0Aprint(lista_vazia)%0A%0Aprint(%22%3E%3E%3E%3E%3ELista Preenchida%22)%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Aprint(lista_preenchida)%0A%0Aprint(%22%3E%3E%3E%3E%3ELista de Objetos%22)%0Alista_preenchida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0Aprint(%5Bstr(x) for x in lista_preenchida_objetos%5D) #transformando cada elemento do vetor em uma str%0A%0Aprint(%22%3E%3E%3E%3E%3EN%C3%BAmero de objetos na lista%22)%0Aprint(len(lista_preenchida))%0A%0Aprint(%22%3E%3E%3E%3E%3EIncluindo %C3%A0 sequ%C3%AAncia%22)%0Alista_preenchida.append(6)%0Aprint(lista_preenchida)%0A%0Aprint(%22%3E%3E%3E%3E%3ERetirando o numero inserido%22)%0Alista_preenchida.pop()%0Aprint(lista_preenchida)%0A%0Aprint(%22%3E%3E%3E%3E%3EInserindo N%C3%BAmero %C3%A0 lista%22)%0Alista_preenchida.insert(0, 10)%0Aprint(lista_preenchida)%0A%0Aprint(%22%3E%3E%3E%3E%3E\n+@@ -762,21 +762,21 @@%0A %250Aprint(%2522%0A-%253E%253E%253E%253E%253E%0A+-----%0A Inserind%0A@@ -791,16 +791,21 @@%0A  %25C3%25A0 lista%0A+-----%0A %2522)%250Alista%0A@@ -858,93 +858,4 @@%0A da)%250A%0A-%250Aprint(%2522%253E%253E%253E%253E%253E\n Reti\n@@ -193,9 +193,14 @@\n do N\n-%C3%BA\n+%25C3%25BA\n mero\n@@ -208,19 +208,23 @@\n inserido\n-%22)%0A\n+%2522)%250A\n lista_pr\n@@ -242,91 +242,17 @@\n p(2)\n-%0Aprint(lista_preenchida)%0A%0Aprint(%22-----Join-----%22)%0Aprint(%22, %22.join(%5Bstr(x) for x in \n+%250Aprint(\n list\n@@ -267,9 +267,9 @@\n hida\n-%5D))%0A\n+)%250A\n %0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-11-16_23-02-43",
+            "content": "@@ -950,17 +950,22 @@\n nt(%22\n-%3E%3E%3E%3E%3EJoin\n+-----Join-----\n %22)%0Ap\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-11-16_23-03-10",
+            "content": "@@ -1012,10 +1012,8 @@\n ida%5D))%0A%0A\n-%0A%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-11-16_23-03-50",
+            "content": "@@ -1016,85 +1016,6 @@\n ))%0A%0A\n-print(%22-----Range-----%22)%0An = 10%0Asequencia = list(range(n + 1))%0Aprint(sequencia)\n %0A%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-16_23-04-58",
+            "content": "@@ -1093,10 +1093,8 @@\n encia)%0A%0A\n-%0A%0A\n",
+            "lines": "46"
+        },
+        {
+            "label": "2025-11-16_23-05-28",
+            "content": "@@ -1023,18 +1023,23 @@\n nt(%22\n-%3E%3E%3E%3E%3ERange\n+-----Range-----\n %22)%0An\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-11-16_23-08-29",
+            "content": "@@ -1092,60 +1092,6 @@\n a)%0A%0A\n-print(%22-----N%C3%BAmeros Aleat%C3%B3rios-----%22)%0Aimport random%0A%0A%0A\n %0A%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-11-16_23-10-30",
+            "content": "@@ -1144,62 +1144,8 @@\n dom%0A\n-aleatorio = %5Brandom.randint(0, 10) for _ in range(10)%5D\n %0A%0A%0A%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-11-16_23-10-34",
+            "content": "@@ -1199,25 +1199,7 @@\n 0)%5D%0A\n-print(aleatorio)%0A%0A\n %0A%0A%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-11-16_23-10-52",
+            "content": "@@ -1217,66 +1217,7 @@\n o)%0A%0A\n-print(%22-----%C3%8Dndice da sequencia-----%22)%0Aprint(sequencia%5B3%5D)%0A\n %0A%0A%0A\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-16_23-11-21",
+            "content": "@@ -1277,36 +1277,6 @@\n %5D)%0A%0A\n-print(%22-----For range-----%22)%0A%0A\n %0A%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-11-16_23-11-53",
+            "content": "@@ -1306,36 +1306,7 @@\n -%22)%0A\n-for x in sequencia:%0A    print(x)\n+%0A%0A%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-16_23-13-15",
+            "content": "@@ -1091,29 +1091,29 @@\n ia)%0A%0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n N%C3%BAmeros Alea\n@@ -1118,16 +1118,21 @@\n eat%C3%B3rios\n+-----\n %22)%0Aimpor\n@@ -1220,21 +1220,21 @@\n %0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n %C3%8Dndice d\n@@ -1244,16 +1244,21 @@\n equencia\n+-----\n %22)%0Aprint\n@@ -1276,29 +1276,29 @@\n 3%5D)%0A%0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n For range%22)%0A\n@@ -1294,16 +1294,21 @@\n or range\n+-----\n %22)%0Afor x\n@@ -1338,91 +1338,4 @@\n t(x)\n-%0A%0Aprint(%22%3E%3E%3E%3E%3EFor indexado%22)%0Afor i in range(len(sequencia)):%0A    print(i, sequencia%5Bi%5D)\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-11-16_23-15-01",
+            "content": "@@ -1,1419 +1,44 @@\n-class Foo:%0A    def __init__(self, x: int):%0A        self.x = x%0A    %0A    def __str__(self):%0A        return f%22Foo(%7Bself.x%7D)%22%0A    %0Aprint(%22%3E%3E%3E%3E%3ELista Vazia%22)%0Alista_vazia: list%5Bint%5D = %5B%5D%0Aprint(lista_vazia)%0A%0Aprint(%22%3E%3E%3E%3E%3ELista Preenchida%22)%0Alista_preenchida: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0Aprint(lista_preenchida)%0A%0Aprint(%22%3E%3E%3E%3E%3ELista de Objetos%22)%0Alista_preenchida_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0Aprint(%5Bstr(x) for x in lista_preenchida_objetos%5D) #transformando cada elemento do vetor em uma str%0A%0Aprint(%22%3E%3E%3E%3E%3EN%C3%BAmero de objetos na lista%22)%0Aprint(len(lista_preenchida))%0A%0Aprint(%22%3E%3E%3E%3E%3EIncluindo %C3%A0 sequ%C3%AAncia%22)%0Alista_preenchida.append(6)%0Aprint(lista_preenchida)%0A%0Aprint(%22%3E%3E%3E%3E%3ERetirando o numero inserido%22)%0Alista_preenchida.pop()%0Aprint(lista_preenchida)%0A%0Aprint(%22%3E%3E%3E%3E%3EInserindo N%C3%BAmero %C3%A0 lista%22)%0Alista_preenchida.insert(0, 10)%0Aprint(lista_preenchida)%0A%0Aprint(%22%3E%3E%3E%3E%3ERetirando N%C3%BAmero inserido%22)%0Alista_preenchida.pop(2)%0Aprint(lista_preenchida)%0A%0Aprint(%22%3E%3E%3E%3E%3EJoin%22)%0Aprint(%22, %22.join(%5Bstr(x) for x in lista_preenchida%5D))%0A%0Aprint(%22%3E%3E%3E%3E%3ERange%22)%0An = 10%0Asequencia = list(range(n + 1))%0Aprint(sequencia)%0A%0Aprint(%22%3E%3E%3E%3E%3EN%C3%BAmeros Aleat%C3%B3rios%22)%0Aimport random%0Aaleatorio = %5Brandom.randint(0, 10) for _ in range(10)%5D%0Aprint(aleatorio)%0A%0Aprint(%22%3E%3E%3E%3E%3E%C3%8Dndice da sequencia%22)%0Aprint(sequencia%5B3%5D)%0A%0Aprint(%22%3E%3E%3E%3E%3EFor range%22)%0Afor x in sequencia:%0A    print(x)%0A%0Aprint(%22%3E%3E%3E%3E%3EFor indexado%22)%0Afor i in range(len(sequencia)):%0A    print(i, sequencia%5Bi%5D)%0A%0A\n+@@ -1410,89 +1410,4 @@%0A %255Bi%255D)%0A-%250A%250A\n #bus\n@@ -56,23 +56,27 @@\n ente\n-%0A\n+%250A\n x = 5\n-%0A\n+%250A\n seq = -1\n %0Afor\n@@ -71,17 +71,19 @@\n seq = -1\n-%0A\n+%250A\n for i, v\n@@ -107,17 +107,19 @@\n uencia):\n-%0A\n+%250A\n     if v\n@@ -124,8 +124,9 @@\n  v == x:\n+%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-16_23-18-19",
+            "content": "@@ -1495,34 +1495,4 @@\n = x:\n-%0A        seq = i%0A        break\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-16_23-18-50",
+            "content": "@@ -1525,269 +1525,4 @@\n reak\n-%0A%0Aprint(%22-----Buscando com index-----%22)%0Aprint(sequencia.index(5))%0A%0Aprint(%22-----Numeros pares da sequencia-----%22)%0Apares = %5Bv for v in sequencia if v %25 2 == 0%5D%0A%0A%0Aprint(%22-----Buscando e retirando-----%22)%0Ax = 5%0Aif x in sequencia:%0A    sequencia.remove(x)%0Aprint(sequencia)\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-11-16_23-23-18",
+            "content": "@@ -1683,21 +1683,8 @@\n  0%5D%0A\n-print(pares)%0A\n %0A%0Apr\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-16_23-24-00",
+            "content": "@@ -1530,21 +1530,21 @@\n %0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n Buscando\n@@ -1553,16 +1553,21 @@\n om index\n+-----\n %22)%0Aprint\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-16_23-25-54",
+            "content": "@@ -1590,21 +1590,21 @@\n %0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n Numeros \n@@ -1617,24 +1617,29 @@\n da sequencia\n+-----\n %22)%0Apares = %5B\n@@ -1688,37 +1688,37 @@\n pares)%0A%0A%0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n Buscando e retir\n@@ -1721,16 +1721,21 @@\n etirando\n+-----\n %22)%0Ax = 5\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-16_23-27-18",
+            "content": "@@ -1788,121 +1788,4 @@\n cia)\n-%0A%0Aprint(%22-----Retirando todos os valores X-----%22)%0Ax = 2%0Asequencia = %5Bv for v in sequencia if v != x%5D%0Aprint(sequencia)\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-16_23-29-26",
+            "content": "@@ -1785,37 +1785,37 @@\n uencia)%0A%0Aprint(%22\n-%3E%3E%3E%3E%3E\n+-----\n Retirando todos \n@@ -1826,16 +1826,21 @@\n alores X\n+-----\n %22)%0Ax = 2\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-11-16_23-30-22",
+            "content": "@@ -1900,100 +1900,4 @@\n cia)\n-%0A%0Aj%0Aj%0Ajjjjjjjjjjjjjjjjjjjjjjjjjj%0A%C3%A7%C3%A7lllllll%0Aiiiiiiiiiiiiiiiiii%0Allllllllllllllllllllllllllll%0Alllll\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-11-16_23-31-50",
+            "content": "@@ -1934,8 +1934,66 @@\n jj%0A%C3%A7%C3%A7lll\n+llll%0Aiiiiiiiiiiiiiiiiii%0Allllllllllllllllllllllllllll%0Alllll\n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-11-16_23-42-15",
+            "content": "@@ -1881,24 +1881,61 @@\n  != x%5D%0Aprint(sequencia)%0A\n+%0Aj%0Aj%0Ajjjjjjjjjjjjjjjjjjjjjjjjjj%0A%C3%A7%C3%A7lll\n",
+            "lines": "93"
+        },
+        {
+            "label": "2025-11-16_23-59-04",
+            "content": "class Foo:\n    def __init__(self, x: int):\n        self.x = x\n    \n    def __str__(self):\n        return f\"Foo({self.x})\"\n    \nprint(\">>>>>Lista Vazia\")\nlista_vazia: list[int] = []\nprint(lista_vazia)\n\nprint(\">>>>>Lista Preenchida\")\nlista_preenchida: list[int] = [1, 2, 3, 4, 5]\nprint(lista_preenchida)\n\nprint(\">>>>>Lista de Objetos\")\nlista_preenchida_objetos: list[Foo] = [Foo(1), Foo(2), Foo(3), Foo(4), Foo(5)]\nprint([str(x) for x in lista_preenchida_objetos]) #transformando cada elemento do vetor em uma str\n\nprint(\">>>>>N\u00famero de objetos na lista\")\nprint(len(lista_preenchida))\n\nprint(\">>>>>Incluindo \u00e0 sequ\u00eancia\")\nlista_preenchida.append(6)\nprint(lista_preenchida)\n\nprint(\">>>>>Retirando o numero inserido\")\nlista_preenchida.pop()\nprint(lista_preenchida)\n\nprint(\">>>>>Inserindo N\u00famero \u00e0 lista\")\nlista_preenchida.insert(0, 10)\nprint(lista_preenchida)\n\nprint(\">>>>>Retirando N\u00famero inserido\")\nlista_preenchida.pop(2)\nprint(lista_preenchida)\n\nprint(\">>>>>Join\")\nprint(\", \".join([str(x) for x in lista_preenchida]))\n\nprint(\">>>>>Range\")\nn = 10\nsequencia = list(range(n + 1))\nprint(sequencia)\n\nprint(\">>>>>N\u00fameros Aleat\u00f3rios\")\nimport random\naleatorio = [random.randint(0, 10) for _ in range(10)]\nprint(aleatorio)\n\nprint(\">>>>>\u00cdndice da sequencia\")\nprint(sequencia[3])\n\nprint(\">>>>>For range\")\nfor x in sequencia:\n    print(x)\n\nprint(\">>>>>For indexado\")\nfor i in range(len(sequencia)):\n    print(i, sequencia[i])\n\n#buscar manualmente\nx = 5\nseq = -1\nfor i, v in enumerate(sequencia):\n    if v == x:\n        seq = i\n        break\n\nprint(\">>>>>Buscando com index\")\nprint(sequencia.index(5))\n\nprint(\">>>>>Numeros pares da sequencia\")\npares = [v for v in sequencia if v % 2 == 0]\nprint(pares)\n\n\nprint(\">>>>>Buscando e retirando\")\nx = 5\nif x in sequencia:\n    sequencia.remove(x)\nprint(sequencia)\n\nprint(\">>>>>Retirando todos os valores X\")\nx = 2\nsequencia = [v for v in sequencia if v != x]\nprint(sequencia)\n",
+            "lines": "88"
+        }
+    ]
+}

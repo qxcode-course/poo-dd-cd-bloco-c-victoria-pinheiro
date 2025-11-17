@@ -19,6 +19,7 @@ expanded:
 - poo@campanha-principal
 - poo@bloco_c-listas
 tasks:
+  poo@array: '{human:_amigo, alone:9, study:200}'
   poo@budega: '{rate:100, human:_amigo, alone:9, study:150}'
 flags:
   quests: 0
