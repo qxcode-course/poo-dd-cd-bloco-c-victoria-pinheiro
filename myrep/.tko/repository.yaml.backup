@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: /home/victoria/Documentos/bloco C POO/poo-dd-cd-bloco-c-victoria-pinheiro/myrep/.tko/cache/poo/Readme.md
-  cache_timestamp: '2025-11-14 20:03:58'
+  cache_timestamp: '2025-11-19 19:57:01'
   filters:
   - listas
 expanded:
@@ -28,4 +28,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@array
+selected: poo@cinema
